@@ -1,0 +1,83 @@
+.main{
+
+  min-height: 100vh;
+  width: 100%;
+   background-image: url(images/login-background.png) no-repeat center center fixed;
+   background-size: cover;
+   -webkit-backround-size: cover;
+   -moz-backround-size: cover;
+   -o-backround-size: cover;
+
+}
+.login-bg-container{
+padding: 3em;
+
+}
+
+.login-block{
+margin-top: 10vh;
+}
+#title-img{ padding: 1.5rem;}
+#title-img img{ width: 100%; margin-top: 2rem; margin-bottom: 2rem;}
+
+h2.login-title.px-4{
+font-family: 'Questrial', sans-serif;
+padding-top: 3.5em;
+font-size: 1.5em;}
+.company-info p{ font-family: 'Questrial', sans-serif; color: #fff;
+margin-bottom: 20px; font-size: 1.6em; text-align: center; line-height: 1.8em;
+
+}
+
+#loginform{ padding: 1em; margin-top: 3.2em;}
+#loginform label{ display: block; padding-bottom: 5px; font-size: 1.4em; padding-left: 0.5em; margin-bottom: 0;
+font-family: 'Open Sans', sans-serif;
+color: #333E48;
+}
+
+#loginform input{ width: 100%;  appearance:none;  border-radius: 25px; padding: 8px;  padding-left: 10px; border: none; margin-bottom: 30px;}
+
+.butn-style-first{
+
+margin-top: 5px;
+color:#fff;
+min-height: 60px;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.2em;
+min-width: 90px;
+font-family:
+padding-right: 40px;
+background-color: #2F2C2C;
+border-radius: 20px;
+}
+
+.forgot-password{
+ margin-top: 30px;
+ font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+footer{
+  font-family: 'Roboto' , sans-serif;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  margin: 0;
+  margin-top: 20px;
+  color: #443B3B;
+}
+
+/* responsive styling */
+@media (max-width: 576px) {
+  .login-bg-container{
+  padding: 0em;}
+
+
+}
+
+
+
+
+
+/* Styling ends here -->

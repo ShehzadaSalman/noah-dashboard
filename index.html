@@ -1,0 +1,1009 @@
+  <!doctype html>
+
+  <html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>NOAH Dashboard</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <!-- menu styles -->
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/Responsive.css">
+
+  <script src="js/codrop-multimenu/modernizr-custom.js"></script>
+  <script>
+  window.onload = function () {
+
+  var options = {
+  	animationEnabled: true,
+  	title: {
+  		text: ""
+  	},
+  	axisY: {
+  		title: "",
+  		suffix: "%",
+  		includeZero: false
+  	},
+  	axisX: {
+  		title: ""
+  	},
+  	data: [{
+  		type: "column",
+  		yValueFormatString: "#,##0.0#"%"",
+  		dataPoints: [
+  			{ label: "UpStream", y: 10.09 },
+  			{ label: "Core", y: 9.40 },
+  			{ label: "Down-Stream", y: 8.50 },
+  			{ label: "Total", y: 7.96 },
+
+
+  		]
+  	}]
+  };
+  $("#chartContainer").CanvasJSChart(options);
+
+  }
+  </script>
+  <script>
+
+
+
+  </script>
+  </head>
+
+  <body>
+    <!-- toggle sidebar here -->
+    <div id="mySidebar" class="thesidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="thecloseNav()">×</a>
+
+    <nav  id="ml-menu2" class="menu2">
+      <button class="action action--close d-none" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+
+      <div   id = "my-simplebar"  class="menu__wrap2">
+        <ul   data-menu="main" class="menu__level" tabindex="" role="menu" aria-label="ITEMS">
+
+          <li  class="menu__item" role="menuitem">
+            <a    data-submenu="submenu-one" aria-owns="submenu-1" href="javascript:void(0);" class="menu__link"  > CABINET </a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/drawers.png" />
+               </span>
+            </div>
+          </li>
+
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="">WALL</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/wall.png" />
+               </span>
+            </div>
+          </li>
+
+          <li class="menu__item" role="menuitem">
+
+            <a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="">TABLE</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/tables.png" />
+               </span>
+            </div>
+          </li>
+
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="">SOFA</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/sofas.png" />
+               </span>
+            </div>
+          </li>
+    <!-- Chair starts here -->
+        <li class="menu__item" role="menuitem">
+                  <a class="menu__link" data-submenu="submenu-5" aria-owns="submenu-5" href="">CHAIR</a>
+                  <div class="item d-flex justify-content-between px-3">
+                      <span class="item-name"></span>
+                      <span class="item-img">
+                       <img src="images/chairs.png" />
+                     </span>
+                  </div>
+                </li>
+    <!-- Cabinet item starts here -->
+        <li class="menu__item" role="menuitem">
+                        <a class="menu__link" data-submenu="submenu-one" aria-owns="submenu-1" href=""> CABINET </a>
+                        <div class="item d-flex justify-content-between px-3">
+                            <span class="item-name"></span>
+                            <span class="item-img">
+                             <img src="images/drawers.png" />
+                           </span>
+                        </div>
+                      </li>
+    <!-- sofa starts here -->
+        <li class="menu__item" role="menuitem">
+                              <a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="">SOFA</a>
+                              <div class="item d-flex justify-content-between px-3">
+                                  <span class="item-name"></span>
+                                  <span class="item-img">
+                                   <img src="images/sofas.png" />
+                                 </span>
+                              </div>
+                            </li>
+    <!-- table starts here -->
+
+      <li class="menu__item" role="menuitem">
+
+      <a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="">TABLE</a>
+                                    <div class="item d-flex justify-content-between px-3">
+                                        <span class="item-name"></span>
+                                        <span class="item-img">
+                                         <img src="images/tables.png" />
+                                       </span>
+                                    </div>
+      </li>
+
+        </ul>
+        <!-- Submenu 1  Cabinets  -->
+        <ul data-menu="submenu-one" id="submenu-1" class="menu__level" tabindex="" role="menu" aria-label="Vegetables">
+
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link"  data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Cabinet 1</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/drawers.png" />
+               </span>
+            </div>
+
+          </li>
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link"   data-submenu="submenu-1-1" aria-owns="submenu-1-1"href="#">IKEA</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/drawers.png" />
+               </span>
+            </div>
+
+          </li>
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link"  data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">ABC</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/drawers.png" />
+               </span>
+            </div>
+
+          </li>
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link"  data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">INTERWOOD</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/drawers.png" />
+               </span>
+            </div>
+
+          </li>
+          <li class="menu__item" role="menuitem">
+            <a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">FANCY</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/drawers.png" />
+               </span>
+            </div>
+
+          </li>
+        </ul>
+
+        <ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="" role="menu" aria-label="Sale %">
+     <!-- add product item -->
+          <li class="menu__item" role="menuitem">
+            <span class = "addRowLink2">
+            <a class="menu__link" href="#">Cabinet # 1</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/plus.png" />
+               </span>
+            </div>
+         </span>
+          </li>
+
+          <li class="menu__item" role="menuitem">
+            <span class="addRowLink2">
+            <a class="menu__link" href="#">Cabinet # 2</a>
+             <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/plus.png" />
+               </span>
+             </div>
+            </span>
+          </li>
+          <li class="menu__item" role="menuitem">
+            <span class="addRowLink2">
+            <a class="menu__link" href="#">Cabinet # 3</a>
+            <div class="item d-flex justify-content-between px-3">
+                <span class="item-name"></span>
+                <span class="item-img">
+                 <img src="images/plus.png" />
+               </span>
+            </div>
+    </span>
+          </li>
+
+    <!-- add product item ends here -->
+        </ul>
+    <!-- submenu 2 -->
+        <ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="" role="menu" aria-label="Fruits">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Citrus Fruits</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Berries</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-1" aria-owns="submenu-2-1" href="#">Special Selection</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Tropical Fruits</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Melons</a></li>
+        </ul>
+
+        <ul data-menu="submenu-2-1" id="submenu-2-1" class="menu__level" tabindex="" role="menu" aria-label="Special Selection">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Exotic Mixes</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wild Pick</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Vitamin Boosters</a></li>
+        </ul>
+    <!-- Submenu 3 -->
+        <ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="" role="menu" aria-label="Grains">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Buckwheat</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Millet</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Quinoa</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wild Rice</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Durum Wheat</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Promo Packs</a></li>
+        </ul>
+
+        <ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="" role="menu" aria-label="Promo Packs">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Starter Kit</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">The Essential 8</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bolivian Secrets</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Flour Packs</a></li>
+        </ul>
+    <!-- Submenu 4 -->
+        <ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="" role="menu" aria-label="Mylk &amp; Drinks">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Grain Mylks</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Seed Mylks</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylks</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nutri Drinks</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Selection</a></li>
+        </ul>
+
+        <ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="" role="menu" aria-label="Selection">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylk Packs</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Amino Acid Heaven</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Allergy Free</a></li>
+        </ul>
+    <!-- Submenu 5 -->
+    <ul data-menu="submenu-5" id="submenu-5" class="menu__level" tabindex="" role="menu" aria-label="Mylk &amp; Drinks">
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Grain Mylks</a></li>
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Seed Mylks</a></li>
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylks</a></li>
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nutri Drinks</a></li>
+      <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-5-1" aria-owns="submenu-5-1" href="#">Selection</a></li>
+    </ul>
+
+    <ul data-menu="submenu-5-1" id="submenu-5-1" class="menu__level" tabindex="" role="menu" aria-label="Selection">
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylk Packs</a></li>
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Amino Acid Heaven</a></li>
+      <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Allergy Free</a></li>
+    </ul>
+
+    <!-- sidebar menu ends here -->
+      </div>
+    </nav>
+
+  </div>
+
+    <!-- toggle sidebar ends here -->
+    <div id ="main">
+    <div class="main-navbar">
+        <div class="container-fluid px-4">
+
+            <div class="row">
+
+                <div class="logo-name col-md-6 ">
+  <!-- <button >☰ Open Sidebar</button> -->
+                  <a class="" onclick="theopenNav()">
+                  <span class="side-menu-icon">
+                    <img src="images/menu2.png">
+                  </span>
+                  </a>
+            <img  class="logo-title" src="images/logo/logoblack.png"  />
+
+                </div>
+                <div class="user-info col-md-6 text-right pr-5">
+
+
+                    <img class="userimg" src="images/userimage1.png" height="30px" width="30px" />
+                    <div class="dropdown">
+                          <div class="drop-btn">
+                   <spam class="username">Hello, Mr Username</spam>
+                   <img  class="arrow1" src="images/arrow1.png" >
+                 </div>
+                 <div class="dropdown-content text-left">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+           </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- main body starts here -->
+  <div class="main-body">
+
+  <div class="container-fluid">
+  <div class="row">
+
+  <div class="col-md-3 left-side">
+     <div class="sidebar">
+       <div class="sidebar-profile">
+         <img src="images/profile-1.png" />
+         <h4>Mr. Username </h4>
+
+        </div>
+  <!-- testing co drop multi menu -->
+  <button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+
+  <nav  id="ml-menu" class="menu">
+    <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+
+    <div   id = "my-simplebar"  class="menu__wrap">
+      <ul   data-menu="main" class="menu__level" tabindex="" role="menu" aria-label="ITEMS">
+
+  <!-- Cabinet item starts here -->
+        <li class="menu__item" role="menuitem">
+          <a   class="menu__link" data-submenu="submenu-one" aria-owns="submenu-1" href="javascript:void(0);" > CABINET </a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/drawers.png" />
+             </span>
+          </div>
+        </li>
+  <!-- WALL Starts here -->
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2" href="">WALL</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/wall.png" />
+             </span>
+          </div>
+        </li>
+  <!-- table starts here -->
+        <li class="menu__item" role="menuitem">
+
+          <a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="">TABLE</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/tables.png" />
+             </span>
+          </div>
+        </li>
+  <!-- sofa starts here -->
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="">SOFA</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/sofas.png" />
+             </span>
+          </div>
+        </li>
+  <!-- Chair starts here -->
+      <li class="menu__item" role="menuitem">
+                <a class="menu__link" data-submenu="submenu-5" aria-owns="submenu-5" href="">CHAIR</a>
+                <div class="item d-flex justify-content-between px-3">
+                    <span class="item-name"></span>
+                    <span class="item-img">
+                     <img src="images/chairs.png" />
+                   </span>
+                </div>
+              </li>
+  <!-- Cabinet item starts here -->
+      <li class="menu__item" role="menuitem">
+                      <a class="menu__link" data-submenu="submenu-one" aria-owns="submenu-1" href=""> CABINET </a>
+                      <div class="item d-flex justify-content-between px-3">
+                          <span class="item-name"></span>
+                          <span class="item-img">
+                           <img src="images/drawers.png" />
+                         </span>
+                      </div>
+                    </li>
+  <!-- sofa starts here -->
+      <li class="menu__item" role="menuitem">
+                            <a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4" href="">SOFA</a>
+                            <div class="item d-flex justify-content-between px-3">
+                                <span class="item-name"></span>
+                                <span class="item-img">
+                                 <img src="images/sofas.png" />
+                               </span>
+                            </div>
+                          </li>
+  <!-- table starts here -->
+    <li class="menu__item" role="menuitem">
+
+    <a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3" href="">TABLE</a>
+                                  <div class="item d-flex justify-content-between px-3">
+                                      <span class="item-name"></span>
+                                      <span class="item-img">
+                                       <img src="images/tables.png" />
+                                     </span>
+                                  </div>
+                                </li>
+
+      </ul>
+      <!-- Submenu 1  Cabinets  -->
+      <ul data-menu="submenu-one" id="submenu-1" class="menu__level" tabindex="" role="menu" aria-label="Vegetables">
+  <!-- cabinet 1 -->
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link"  data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Cabinet 1</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/drawers.png" />
+             </span>
+          </div>
+
+        </li>
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link"   data-submenu="submenu-1-1" aria-owns="submenu-1-1"href="#">IKEA</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/drawers.png" />
+             </span>
+          </div>
+
+        </li>
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link"  data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">ABC</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/drawers.png" />
+             </span>
+          </div>
+
+        </li>
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link"  data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">INTERWOOD</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/drawers.png" />
+             </span>
+          </div>
+
+        </li>
+        <li class="menu__item" role="menuitem">
+          <a class="menu__link" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">FANCY</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/drawers.png" />
+             </span>
+          </div>
+
+        </li>
+      </ul>
+
+      <ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="" role="menu" aria-label="Sale %">
+   <!-- add product item -->
+        <li class="menu__item" role="menuitem">
+          <span class = "addRowLink">
+          <a class="menu__link" href="#">Cabinet # 1</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/plus.png" />
+             </span>
+          </div>
+       </span>
+        </li>
+
+        <li class="menu__item" role="menuitem">
+          <span class="addRowLink">
+          <a class="menu__link" href="#">Cabinet # 2</a>
+           <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/plus.png" />
+             </span>
+           </div>
+          </span>
+        </li>
+        <li class="menu__item" role="menuitem">
+          <span class="addRowLink">
+          <a class="menu__link" href="#">Cabinet # 3</a>
+          <div class="item d-flex justify-content-between px-3">
+              <span class="item-name"></span>
+              <span class="item-img">
+               <img src="images/plus.png" />
+             </span>
+          </div>
+  </span>
+        </li>
+
+  <!-- add product item ends here -->
+      </ul>
+  <!-- submenu 2 -->
+      <ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="" role="menu" aria-label="Fruits">
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Citrus Fruits</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Berries</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2-1" aria-owns="submenu-2-1" href="#">Special Selection</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Tropical Fruits</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Melons</a></li>
+      </ul>
+
+      <ul data-menu="submenu-2-1" id="submenu-2-1" class="menu__level" tabindex="" role="menu" aria-label="Special Selection">
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Exotic Mixes</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wild Pick</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Vitamin Boosters</a></li>
+      </ul>
+  <!-- Submenu 3 -->
+      <ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="" role="menu" aria-label="Grains">
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Buckwheat</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Millet</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Quinoa</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Wild Rice</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Durum Wheat</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3-1" aria-owns="submenu-3-1" href="#">Promo Packs</a></li>
+      </ul>
+
+      <ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="" role="menu" aria-label="Promo Packs">
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Starter Kit</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">The Essential 8</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bolivian Secrets</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Flour Packs</a></li>
+      </ul>
+  <!-- Submenu 4 -->
+      <ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="" role="menu" aria-label="Mylk &amp; Drinks">
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Grain Mylks</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Seed Mylks</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylks</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nutri Drinks</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1" aria-owns="submenu-4-1" href="#">Selection</a></li>
+      </ul>
+
+      <ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="" role="menu" aria-label="Selection">
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylk Packs</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Amino Acid Heaven</a></li>
+        <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Allergy Free</a></li>
+      </ul>
+  <!-- Submenu 5 -->
+  <ul data-menu="submenu-5" id="submenu-5" class="menu__level" tabindex="" role="menu" aria-label="Mylk &amp; Drinks">
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Grain Mylks</a></li>
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Seed Mylks</a></li>
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylks</a></li>
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nutri Drinks</a></li>
+    <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-5-1" aria-owns="submenu-5-1" href="#">Selection</a></li>
+  </ul>
+
+  <ul data-menu="submenu-5-1" id="submenu-5-1" class="menu__level" tabindex="" role="menu" aria-label="Selection">
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylk Packs</a></li>
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Amino Acid Heaven</a></li>
+    <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Allergy Free</a></li>
+  </ul>
+
+  <!-- sidebar menu ends here -->
+    </div>
+  </nav>
+
+  <!-- sidebar ends here -->
+  </div>
+  </div>
+
+          <div class="col-md-9 right-side">
+            <div class="rightbar">
+          <div class="main-side" style="">
+          <!-- bootstrap 4 table -->
+
+                <div id = "life-select" class="float-left px-4 pt-2 pb-3">
+                  <select class="custom-select my-1 mr-sm-2 br-25" id="inlineFormCustomSelectPref">
+                    <option selected>Select Life Time</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <a class="modal-click"  data-toggle="modal" data-target="#myModal2">
+                <div  id = "save-btn" class="float-right pt-2 px-4 pb-3">
+                  <button class="form-control butn-style-first"> SAVE</button>
+                </div>
+                </a>
+
+
+              <!-- table content starts here-->
+              <div id = "table-one" class="table-responsive" data-simplebar >
+              <table id = "table-body" class="table " >
+                <thead class="table-grey-header">
+                  <tr>
+                    <th scope="col" class="pl-4">Product</th>
+                    <th scope="col" class="pl-4">Manufacture</th>
+                    <th scope="col" class="pl-4">Quantity</th>
+                    <th scope="col" class="pl-4">Action</th>
+                  </tr>
+                </thead>
+                <tbody id = "table-body-one">
+
+  <tr class="pl-5 pt-3"><td scope="row" class="pl-4">
+    <div class="table-product-img d-inline">
+      <img class="img-fluid" src="images/blue-circle.png" />
+    </div>
+    <span>
+<a data-toggle="modal" data-target="#myModal">
+      Ginger Art 112
+</a>
+    </span></td>
+    <td class="pl-4">
+
+      Arper, Monastier di Trevesto (TV)
+
+    </td><td class="pl-5">03</td><td class="pl-4">
+      <a class="modal-click"  data-toggle="modal" data-target="#myModal">
+        <div class="table-product-img d-inline">
+        <img class="img-fluid" src="images/edit-icon.png" />
+        </div>
+      </a>
+  <a class="deleteRowLink">
+    <div class="table-product-img d-inline"><img class="img-fluid" src="images/delete-icon.png" /></div>
+  </a>
+  </td>
+  </tr>
+
+                   <tr class="pl-5 pt-3">
+                    <td scope="row" class="pl-4">
+
+
+
+                      <a data-toggle="modal" data-target="#myModal">
+                      <div class="table-product-img d-inline">
+                      <img class="img-fluid" src="images/blue-circle.png" />
+                     </div>
+                      <span>Ginger Art 112</span>
+                       </a>
+                    </td>
+                    <td class="pl-4">Arper, Monastier di Trevesto (TV)</td>
+                    <td class="pl-5">03</td>
+                    <td class="pl-4">
+                      <a class="modal-click"  data-toggle="modal" data-target="#myModal">
+                            <div class="table-product-img d-inline">
+                            <img class="img-fluid" src="images/edit-icon.png" />
+                           </div>
+                         </a>
+
+                          <a  class= "deleteRowLink">
+                           <div class="table-product-img d-inline">
+                           <img class="img-fluid" src="images/delete-icon.png" />
+                          </div>
+                          </a></td>
+                  </tr>
+                  <tr class="pl-5 pt-3">
+                    <td scope="row" class="pl-4">
+                      <div class="table-product-img d-inline">
+                      <img class="img-fluid" src="images/blue-circle.png" />
+                    </div>
+                      <span>
+<a data-toggle="modal" data-target="#myModal">
+                        Ginger Art 112</span>
+</a>
+                    </td>
+                    <td class="pl-4">Arper, Monastier di Trevesto (TV)</td>
+                    <td class="pl-5">03</td>
+                    <td class="pl-4">
+                      <a class="modal-click"  data-toggle="modal" data-target="#myModal">
+                            <div class="table-product-img d-inline">
+                            <img class="img-fluid" src="images/edit-icon.png" />
+                           </div>
+                         </a>
+
+                          <a class= "deleteRowLink">
+                           <div class="table-product-img d-inline">
+                           <img class="img-fluid" src="images/delete-icon.png" />
+                          </div>
+                          </a></td>
+                  </tr>
+                  <tr class="pl-5 pt-3">
+                    <td scope="row" class="pl-4">
+                      <div class="table-product-img d-inline">
+                      <img class="img-fluid" src="images/blue-circle.png" />
+                    </div>
+                      <span>
+<a data-toggle="modal" data-target="#myModal">
+
+                        Ginger Art 112
+</a>
+
+                      </span>
+                    </td>
+                    <td class="pl-4">Arper, Monastier di Trevesto (TV)</td>
+                    <td class="pl-5">03</td>
+                    <td class="pl-4">
+                      <a class="modal-click"  data-toggle="modal" data-target="#myModal">
+                            <div class="table-product-img d-inline">
+                            <img class="img-fluid" src="images/edit-icon.png" />
+                           </div>
+                         </a>
+
+                          <a class= "deleteRowLink" >
+                           <div class="table-product-img d-inline">
+                           <img class="img-fluid" src="images/delete-icon.png" />
+                          </div>
+                          </a></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>  <!-- table content ends here-->
+
+  <!-- bootstrap 4 table ends here -->
+
+
+  </div> <!-- main sidebar-->
+
+  <!-- main side two for graphs -->
+
+   <div  class="main-side-two">
+
+     <div   class="">
+  <!-- different tabs -->
+<div class="col-md-12">
+                        <nav>
+                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Project</a>
+                                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Category</a>
+                                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Product</a>
+                             </div>
+                         </nav>
+
+<!-- content space for them -->
+                     <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <div class="mychartcontainer"  id="chartContainer" ></div>
+
+                          </div>
+
+                          <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="nav-home-tab">
+    <div class="mychartcontainer"  id="" ></div>
+                          </div>
+
+                          <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="nav-home-tab">
+    <div class="mychartcontainer"  id="" ></div>
+
+                          </div>
+
+
+
+</div>
+<!-- content space ends here -->
+
+</div>
+
+
+
+  <!-- tabs ends here -->
+
+
+
+
+     </div>
+
+   </div>
+
+  <!-- main side two ends here -->
+
+  </div> <!-- right-side -->
+</div>
+  </div><!-- main row -->
+  </div> <!-- main container fluid -->
+  <!-- footer starts here -->
+
+  <!-- footer ends here -->
+
+  </div> <!-- main tag ends here -->
+
+<!-- save modal starts here -->
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+
+
+      <div class="modal-header">
+        <h4 class="modal-title px-4">SUBMIT DETAILS</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+
+      <div class="modal-body">
+         <div class="container">
+              <div class="row">
+               <div class="col-12">
+                <div class="px-3">
+               <input type="text" name="" value="" class="form-control mt-2" placeholder="Scenario Name">
+               <button id = "modal-add-now" class="butn-style-first">
+                 SUBMIT
+               </button>
+               </div>
+               </div>
+              </div>
+          </div>
+       </div>
+
+
+</div>
+</div>
+</div>
+<!-- start modal ends here -->
+
+  <!-- Product modal starts here -->
+   <div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+       <div class="modal-content">
+
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <h4 class="modal-title px-4">ITEM DETAILS</h4>
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+
+         <!-- Modal body -->
+         <div class="modal-body">
+            <div class="container">
+                 <div class="row">
+                   <!-- product detail -->
+                 <div class="col-md-6">
+                  <div class="modal-product">
+                    <div class="modal-product-detail">
+                       <h4>Product Name :</h4>
+                       <p>Ginger Art 11-2</p>
+                    </div>
+
+                    <div class="modal-product-Quantity ">
+                      <span class="counter-title d-inline-block">Quantity :</span>
+                      <form>
+                        <div  class="value-button d-inline-block " id="decrease" onclick="decreaseValue()" value="Decrease Value">
+                          <img src="images/minus-button.png" class="price-btn">
+                        </div>
+
+                        <input type="number" id="number" value="0" class="d-inline-block"  />
+
+                        <div class="value-button d-inline-block" id="increase" onclick="increaseValue()" value="Increase Value">
+                           <img src="images/plus-button.png" class="price-btn" />
+                         </div>
+                      </form>
+                   </div>
+
+
+                </div>
+
+                 </div>
+                   <!-- product detail ends here -->
+
+
+                <!-- product image -->
+                <div class="col-md-6">
+                <div class="modal-product-image-div text-center">
+                <img src="images/modal-img.png" class="img-fluid">
+              </div>
+
+                </div>
+                <!-- product image ends here -->
+                 </div>
+
+                 <div class="row">
+                  <div class="col-12">
+                  <button id = "modal-add-now" class="form-control butn-style-first">
+                    Add Now
+                  </button>
+                  </div>
+                    </div>
+            </div>
+
+
+
+         </div>
+
+         <!-- Modal footer -->
+         <!-- <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div> -->
+
+       </div>
+     </div>
+  </div>
+  <!-- modal ends here -->
+
+  </div> <!-- main body ends here -->
+
+  <footer class="text-center">
+
+ NOAH PORTAL @ ALL Rights Reserved
+  </footer>
+
+
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+      <script src="js/codrop-multimenu/classie.js"></script>
+      <script src="js/codrop-multimenu/dummydata.js"></script>
+      <script src="js/codrop-multimenu/main.js"></script>
+      <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+      <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+      <script src="js/addrow.js"></script>
+      <script src="js/sidebar.js"></script>
+      <script src="js/increase-decrease.js" ></script>
+      <script>
+
+
+
+
+
+      (function() {
+    		var menuEl = document.getElementById('ml-menu'),
+    			mlmenu = new MLMenu(menuEl, {
+    				// breadcrumbsCtrl : true, // show breadcrumbs
+    				// initialBreadcrumb : 'all', // initial breadcrumb text
+    				backCtrl : false, // show back button
+    				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+    				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+    			});
+
+
+    		// simulate grid content loading
+    		var gridWrapper = document.querySelector('.content');
+
+    		function loadDummyData(ev, itemName) {
+    			ev.preventDefault();
+
+    			closeMenu();
+    			gridWrapper.innerHTML = '';
+    			classie.add(gridWrapper, 'content--loading');
+    			setTimeout(function() {
+    				classie.remove(gridWrapper, 'content--loading');
+    				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+    			}, 700);
+    		}
+    	})();
+
+
+
+      </script>
+
+
+
+  </body>
+
+  </html>

@@ -1,0 +1,73 @@
+.main{
+
+  min-height: 100vh;
+  width: 100%;
+   background-image: url(images/login-background.png) no-repeat center center fixed;
+   background-size: cover;
+   -webkit-backround-size: cover;
+   -moz-backround-size: cover;
+   -o-backround-size: cover;
+position: relative;
+
+}
+.main-content{
+  margin-top: 15vh;
+}
+
+
+.butn-style-first{
+
+margin-top: 5px;
+color:#fff;
+min-height: 40px;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.4em;
+min-width: 60px;
+font-family:
+padding-right: 40px;
+border: none;
+background-color: #2F2C2C;
+border-radius: 20px;
+margin-top: 30px;
+cursor: pointer;
+}
+
+
+.title{ color: #fff; width: 100%;  padding: 2rem; padding-bottom: 0; text-align: center; }
+.title img{ margin-bottom: 0.4rem;}
+
+hr{   border-color: #fff;}
+.p1{ margin-bottom: 0;  margin-top: -10px; color: #fff; font-size: 2rem;  text-align: center; font-family: 'Questrial', sans-serif;}
+.p2{ margin-bottom: 5px; color: #fff; font-size: 1.8rem; margin-top: -8px; text-align: center; font-family: 'Questrial', sans-serif; }
+.p3{ color: #fff; font-size: 1.4rem; margin-bottom: 60px;  text-align: center; font-family: 'Questrial', sans-serif;}
+
+
+
+
+footer{
+  font-family: 'Roboto' , sans-serif;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  width: 100vw;
+  margin: 0;
+
+  color: #443B3B;
+}
+
+/* responsive styling */
+@media (max-width: 576px) {
+  .login-bg-container{
+  padding: 0em;}
+
+
+}
+
+
+
+
+
+/* Styling ends here -->
